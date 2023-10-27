@@ -1,0 +1,24 @@
+.posv-caja{
+    @include position(flex,space-evenly,center);
+    flex-wrap: wrap;
+ }
+ .caja-posventa{
+    width: 350px;
+    height: 400px;
+    border: 2px black solid;
+    margin: 10px;
+    padding: 20px;
+    background-color: $bg-pri;
+    color: $bg-sec;
+    font-size: 20px;
+}
+.caja-posventa h2{
+    text-align: center;
+    border: solid black 2px;
+    background-color: darken($bg-pri, 10%);
+}
+
+.vid-pos{
+    margin: 20px;
+   @include position(flex,center,center);
+}

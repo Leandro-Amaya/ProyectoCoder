@@ -1,0 +1,25 @@
+.main-h2-okm{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 900;
+ }
+ .parrafo-okm{
+    p{
+        font-size:x-large;
+         color: rgb(0, 0, 0);
+         text-align: center;
+      }
+ } 
+ .autos-cero-km{
+    @extend %disposicion;
+ }
+ .pick-ups-cero-km{
+    @extend %disposicion;
+ }
+ .suvs-cero-km{
+   @extend %disposicion;
+
+ }
+.p-okm{
+   @extend %parrafos;
+}

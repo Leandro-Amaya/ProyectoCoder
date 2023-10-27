@@ -1,0 +1,26 @@
+.lista-usados{
+    @extend %parrafos;
+}
+.margen{
+    margin-top: 50px;
+}
+.utilitarios{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.pick-up{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.text-usados{
+    @extend %parrafos;
+    p{
+        text-decoration: underline;
+        font-size: 25px;
+    }
+    ul{
+        list-style-type:circle;
+    }
+}

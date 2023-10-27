@@ -1,0 +1,88 @@
+.parrafo-contacto{
+   @extend %parrafos;
+    grid-area: parrafo;
+}
+
+.main-div-acesores{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "img parrafo"
+    "img lista";
+    @media screen and (max-width: 992px) {
+        img{
+            width: 100%;
+        }
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        grid-template-areas:
+        "img"
+        "parrafo"
+        "lista"
+    }
+    img{
+        grid-area: img;
+     }
+     p{
+        @extend %parrafos;
+     }
+     ul{
+        grid-area: lista;
+        @extend %parrafos;
+    }
+}
+.service{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "img parrafo"
+    "image lista";
+    grid-row-gap: 30px;
+    grid-column-gap: 20px;
+    @media screen and (max-width: 992px) {
+        img{
+            width: 100%;
+        }
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr;
+        grid-template-areas: 
+        "img"
+        "parrafo"
+        "image"
+        "lista";
+    }
+    .img-servis{
+        grid-area: img;
+    }
+    .image-servis{
+        grid-area: image;
+    }
+    p{
+        grid-area: parrafo;
+    }
+    div{
+        grid-area: lista;
+        #boton{
+            border:map-get($titulos , bor);
+            background-color: $bg-pri;
+            color: $bg-sec;
+            font-size: 20px;
+        }
+    }
+    
+}
+.btn-m{
+    background-color:$bg-sec ;
+    color:black;
+}
+section{
+    font-family: 'Archivo', sans-serif;
+    border-radius: 10px;
+    border: map-get($titulos , bor ); 
+    margin: 30px;
+    padding: 20px;
+    background-color:$bg-pri;
+    color: $bg-sec;
+}

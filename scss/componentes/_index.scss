@@ -1,0 +1,34 @@
+.centrado{
+    text-align: map-get($titulos,dispo);
+}
+.font-cursive{
+   font-family: 'Averia Serif Libre', cursive;
+}
+.img-center{
+    @include position(flex,center,center);
+    margin: 20px;
+} 
+.img-respon{
+    max-width: 100%;
+    height: auto;
+}
+.imag-par{
+    margin: 30px;
+    display:grid;
+    grid-template-columns: 2fr 2fr;
+    column-gap: 20px;
+    @media screen and (max-width: 992px){
+        grid-template-columns: none;
+    }
+}
+.imag-par p{
+   @extend %parrafos;
+
+}
+.map{
+    width: 600px;
+    height: 450px;
+    @media screen and (max-width: 992px){
+        width: 100%;
+    }
+}

@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+nav{
+    font-family: 'Archivo', sans-serif;
+    background-color: $bg-pri;
+    height: 141px;
+    .nav-m{
+        font-family: 'Archivo', sans-serif;
+        font-size: 23px;
+        padding: 10px 25px;
+        margin: 30px;
+        color: $bg-sec;
+        text-decoration: none;
+        &:hover{
+            transform: scale(1.1);
+        } 
+    }
+    .nav-mod{
+        text-decoration: underline;
+    }
+}
+h1{
+    font-size: 50px;
+    font-family: 'Archivo', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+ .div-body{
+    background-image: url("../images/fondoimg.jpg");
+ }
+
+ footer{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    column-gap: 30px;
+    padding: 30px;
+    margin-top: 20px;
+    background-color: $bg-pri;
+    h3{
+        color: $bg-sec;
+        font-family: 'Archivo', sans-serif;
+        text-decoration: underline;
+     }
+    .foot-p{
+        width: 300px;
+    }
+    .footer-font{
+        font-family: 'Archivo', sans-serif;
+        color: $bg-sec;
+    }
+    .icono-foot{
+        @include position(flex,start,center);
+        gap: 10px;
+    }
+    @media screen and (max-width: 992px){
+        grid-template-columns: none;
+    }
+ }
+
+ 
+

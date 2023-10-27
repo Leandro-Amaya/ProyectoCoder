@@ -1,0 +1,14 @@
+%disposicion{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+%parrafos{
+    font-family: 'Averia Serif Libre', cursive;
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+}
