@@ -1,4 +1,4 @@
-.suvs-cero-km, .pick-ups-cero-km, .autos-cero-km {
+.pick-up, .utilitarios, .suvs-cero-km, .pick-ups-cero-km, .autos-cero-km {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -26,7 +26,11 @@ ul {
 nav {
   font-family: "Archivo", sans-serif;
   background-color: rgb(47, 79, 79);
-  height: 141px;
+}
+@media screen and (min-width: 992px) {
+  nav {
+    height: 141px;
+  }
 }
 nav .nav-m {
   font-family: "Archivo", sans-serif;
@@ -176,15 +180,11 @@ footer .icono-foot {
 }
 
 .utilitarios {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .pick-up {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .text-usados p {
