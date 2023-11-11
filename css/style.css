@@ -6,7 +6,8 @@
 }
 
 .main-div-acesores ul, .main-div-acesores p, .parrafo-contacto, .text-usados, .lista-usados, .p-okm, .imag-par p {
-  font-family: "Averia Serif Libre", cursive;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
   background-color: rgb(255, 255, 255);
   margin: 20px;
   padding: 10px;
@@ -24,7 +25,8 @@ ul {
 }
 
 nav {
-  font-family: "Archivo", sans-serif;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
   background-color: rgb(47, 79, 79);
 }
 @media screen and (min-width: 992px) {
@@ -33,7 +35,6 @@ nav {
   }
 }
 nav .nav-m {
-  font-family: "Archivo", sans-serif;
   font-size: 23px;
   padding: 10px 25px;
   margin: 30px;
@@ -46,12 +47,21 @@ nav .nav-m:hover {
 nav .nav-mod {
   text-decoration: underline;
 }
+nav .boton-nav {
+  background-color: rgb(194, 194, 194);
+}
 
 h1 {
   font-size: 50px;
-  font-family: "Archivo", sans-serif;
+  font-family: "Source Sans 3", sans-serif;
   text-align: center;
   font-weight: bold;
+}
+
+h2 {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 700;
+  padding: 30px;
 }
 
 .div-body {
@@ -63,19 +73,21 @@ footer {
   grid-template-columns: 2fr 2fr 1fr;
   column-gap: 30px;
   padding: 30px;
-  margin-top: 20px;
+  margin-top: 30px;
   background-color: rgb(47, 79, 79);
 }
 footer h3 {
   color: rgb(194, 194, 194);
-  font-family: "Archivo", sans-serif;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
   text-decoration: underline;
 }
 footer .foot-p {
   width: 300px;
 }
 footer .footer-font {
-  font-family: "Archivo", sans-serif;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
   color: rgb(194, 194, 194);
 }
 footer .icono-foot {
@@ -95,7 +107,8 @@ footer .icono-foot {
 }
 
 .font-cursive {
-  font-family: "Averia Serif Libre", cursive;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
 }
 
 .img-center {
@@ -121,10 +134,16 @@ footer .icono-foot {
     grid-template-columns: none;
   }
 }
+.mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .map {
-  width: 600px;
-  height: 450px;
+  width: 900px;
+  height: 500px;
+  padding: 30px;
 }
 @media screen and (max-width: 992px) {
   .map {
@@ -151,21 +170,50 @@ footer .icono-foot {
   flex-wrap: wrap;
 }
 
+.imag-posv {
+  display: grid;
+  margin: 50px;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 30px;
+}
+@media screen and (max-width: 992px) {
+  .imag-posv {
+    grid-template-columns: none;
+  }
+}
+.imag-posv img {
+  max-width: 100%;
+  height: auto;
+}
+.imag-posv p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
 .caja-posventa {
   width: 350px;
   height: 400px;
   border: 2px black solid;
   margin: 10px;
-  padding: 20px;
+  padding: 30px;
   background-color: rgb(47, 79, 79);
   color: rgb(194, 194, 194);
-  font-size: 20px;
+  font-size: 25px;
 }
-
-.caja-posventa h2 {
+.caja-posventa h4 {
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   border: solid black 2px;
   background-color: #1c2f2f;
+}
+.caja-posventa p {
+  text-align: center;
+  margin-top: 30px;
 }
 
 .vid-pos {
@@ -200,6 +248,7 @@ footer .icono-foot {
 }
 
 .main-div-acesores {
+  margin: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -207,6 +256,7 @@ footer .icono-foot {
 }
 @media screen and (max-width: 992px) {
   .main-div-acesores {
+    margin: 0px;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr;
     grid-template-areas: "img" "parrafo" "lista";
@@ -223,6 +273,7 @@ footer .icono-foot {
 }
 
 .service {
+  margin: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -232,6 +283,7 @@ footer .icono-foot {
 }
 @media screen and (max-width: 992px) {
   .service {
+    margin: 0px;
     grid-template-columns: 1fr;
     grid-template-rows: 4fr;
     grid-template-areas: "img" "parrafo" "image" "lista";
@@ -265,7 +317,8 @@ footer .icono-foot {
 }
 
 section {
-  font-family: "Archivo", sans-serif;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 700;
   border-radius: 10px;
   border: solid rgb(0, 0, 0) 2px;
   margin: 30px;

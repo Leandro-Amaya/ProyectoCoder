@@ -2,7 +2,8 @@
     text-align: map-get($titulos,dispo);
 }
 .font-cursive{
-   font-family: 'Averia Serif Libre', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700
 }
 .img-center{
     @include position(flex,center,center);
@@ -20,14 +21,19 @@
     @media screen and (max-width: 992px){
         grid-template-columns: none;
     }
+    p{
+        @extend %parrafos;
+     
+     }
 }
-.imag-par p{
-   @extend %parrafos;
 
+.mapa{
+    @include position(flex,center,center);
 }
 .map{
-    width: 600px;
-    height: 450px;
+    width: 900px;
+    height: 500px;
+    padding: 30px;
     @media screen and (max-width: 992px){
         width: 100%;
     }
